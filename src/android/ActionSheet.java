@@ -64,11 +64,11 @@ public class ActionSheet extends CordovaPlugin {
       public void run() {
 
         final AlertDialog.Builder builder;
-        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-          builder = new AlertDialog.Builder(cordova.getActivity(), theme);
-        } else {
-          builder = new AlertDialog.Builder(cordova.getActivity());
-        }
+        //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
+          builder = new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+        //} else {
+        //  builder = new AlertDialog.Builder(cordova.getActivity());
+        //}
 
         builder
             .setTitle(title)
