@@ -65,7 +65,7 @@ public class ActionSheet extends CordovaPlugin {
 
         final AlertDialog.Builder builder;
         //if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
-          builder = new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_DEVICE_DEFAULT_LIGHT);
+          builder = new AlertDialog.Builder(cordova.getActivity(), AlertDialog.THEME_HOLO_LIGHT);
         //} else {
         //  builder = new AlertDialog.Builder(cordova.getActivity());
         //}
